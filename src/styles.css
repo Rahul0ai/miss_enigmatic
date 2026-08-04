@@ -1,0 +1,178 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Pirata One", "Cinzel", serif;
+  --font-serif: "Cinzel", "IM Fell English", serif;
+  --font-body: "IM Fell English", "Cinzel", serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-parchment: var(--parchment);
+  --color-parchment-dark: var(--parchment-dark);
+  --color-ink: var(--ink);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-blood: var(--blood);
+  --color-sea: var(--sea);
+  --color-sea-deep: var(--sea-deep);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* One Piece pirate palette */
+  --background: oklch(0.18 0.04 240);      /* deep midnight sea */
+  --foreground: oklch(0.94 0.03 80);        /* parchment cream */
+  --parchment: oklch(0.90 0.06 78);         /* aged paper */
+  --parchment-dark: oklch(0.78 0.09 65);    /* darker paper */
+  --ink: oklch(0.22 0.05 40);               /* dark ink brown */
+  --gold: oklch(0.72 0.14 78);              /* pirate gold */
+  --gold-bright: oklch(0.85 0.17 88);       /* bright gold */
+  --blood: oklch(0.45 0.19 25);             /* wanted red */
+  --sea: oklch(0.42 0.12 230);              /* ocean blue */
+  --sea-deep: oklch(0.22 0.08 245);         /* deep ocean */
+
+  --primary: oklch(0.72 0.14 78);           /* gold */
+  --primary-foreground: oklch(0.18 0.04 240);
+  --secondary: oklch(0.45 0.19 25);         /* blood red */
+  --secondary-foreground: oklch(0.94 0.03 80);
+  --muted: oklch(0.28 0.05 235);
+  --muted-foreground: oklch(0.72 0.05 80);
+  --accent: oklch(0.85 0.17 88);
+  --accent-foreground: oklch(0.18 0.04 240);
+  --card: oklch(0.22 0.04 240);
+  --card-foreground: oklch(0.94 0.03 80);
+  --border: oklch(0.72 0.14 78 / 0.3);
+  --input: oklch(0.72 0.14 78 / 0.3);
+  --ring: oklch(0.72 0.14 78);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.94 0.03 80);
+  --popover: oklch(0.22 0.04 240);
+  --popover-foreground: oklch(0.94 0.03 80);
+
+  --gradient-ocean: linear-gradient(180deg, oklch(0.18 0.04 240), oklch(0.12 0.06 245));
+  --gradient-gold: linear-gradient(135deg, oklch(0.85 0.17 88), oklch(0.62 0.13 60));
+  --gradient-parchment: linear-gradient(180deg, oklch(0.92 0.06 78), oklch(0.82 0.09 65));
+  --shadow-glow: 0 0 60px oklch(0.72 0.14 78 / 0.5), 0 0 120px oklch(0.72 0.14 78 / 0.25);
+  --shadow-parchment: 0 20px 60px oklch(0 0 0 / 0.7), 0 4px 12px oklch(0 0 0 / 0.4);
+}
+
+.dark { color-scheme: dark; }
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.02em; }
+}
+
+/* Utility layer for themed effects */
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-serif-cinzel { font-family: var(--font-serif); }
+  .font-body { font-family: var(--font-body); }
+
+  .text-gold { color: var(--gold-bright); }
+  .bg-parchment { background: var(--gradient-parchment); }
+  .bg-ocean { background: var(--gradient-ocean); }
+  .text-stroke-ink {
+    -webkit-text-stroke: 2px var(--ink);
+    text-shadow: 0 4px 0 oklch(0 0 0 / 0.4);
+  }
+
+  .glow-gold { box-shadow: var(--shadow-glow); }
+  .shadow-parchment { box-shadow: var(--shadow-parchment); }
+
+  /* Wanted poster paper */
+  .paper-texture {
+    background:
+      radial-gradient(ellipse at 20% 10%, oklch(0.72 0.09 65 / 0.35), transparent 50%),
+      radial-gradient(ellipse at 80% 90%, oklch(0.55 0.14 45 / 0.4), transparent 55%),
+      radial-gradient(ellipse at 50% 50%, transparent 40%, oklch(0.45 0.15 40 / 0.35) 100%),
+      var(--gradient-parchment);
+  }
+  .paper-torn {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 92%, transparent 100%);
+            mask-image: radial-gradient(ellipse at center, black 92%, transparent 100%);
+  }
+
+  /* Rope border */
+  .rope-border {
+    background-image: repeating-linear-gradient(45deg,
+      var(--gold) 0 6px, var(--ink) 6px 10px);
+    padding: 6px;
+    border-radius: 4px;
+  }
+
+  /* Animations */
+  @keyframes float-wave { 0%,100%{transform:translateY(0) rotate(-1deg)} 50%{transform:translateY(-12px) rotate(1deg)} }
+  @keyframes sway { 0%,100%{transform:rotate(-3deg)} 50%{transform:rotate(3deg)} }
+  @keyframes flicker { 0%,100%{opacity:1;text-shadow:0 0 24px var(--gold-bright)} 50%{opacity:.82;text-shadow:0 0 12px var(--gold)} }
+  @keyframes stamp-in {
+    0% { opacity:0; transform: scale(4) rotate(-25deg); filter: blur(8px); }
+    60% { opacity:1; transform: scale(0.9) rotate(-8deg); filter: blur(0); }
+    100% { transform: scale(1) rotate(-6deg); }
+  }
+  @keyframes drift { from{background-position:0 0} to{background-position:1000px 0} }
+  @keyframes shine { 0%{transform:translateX(-100%)} 100%{transform:translateX(200%)} }
+  @keyframes reveal-up { from{opacity:0; transform:translateY(40px)} to{opacity:1; transform:translateY(0)} }
+  @keyframes pulse-ring { 0%{box-shadow:0 0 0 0 oklch(0.85 0.17 88 / 0.7)} 100%{box-shadow:0 0 0 30px oklch(0.85 0.17 88 / 0)} }
+  @keyframes spin-slow { to { transform: rotate(360deg); } }
+
+  .anim-float { animation: float-wave 6s ease-in-out infinite; }
+  .anim-sway  { animation: sway 5s ease-in-out infinite; transform-origin: top center; }
+  .anim-flicker { animation: flicker 3s ease-in-out infinite; }
+  .anim-stamp { animation: stamp-in 0.9s cubic-bezier(.2,.9,.2,1.2) both; }
+  .anim-reveal { animation: reveal-up 0.9s ease-out both; }
+  .anim-pulse-ring { animation: pulse-ring 2s ease-out infinite; }
+  .anim-spin-slow { animation: spin-slow 40s linear infinite; }
+
+  .shine-sweep { position: relative; overflow: hidden; }
+  .shine-sweep::after {
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(120deg, transparent 30%, oklch(1 0 0 / 0.35) 50%, transparent 70%);
+    transform: translateX(-100%);
+    animation: shine 3s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  /* Ocean sparkle background */
+  .stars {
+    background-image:
+      radial-gradient(1px 1px at 20% 30%, oklch(1 0 0 / 0.6), transparent),
+      radial-gradient(1px 1px at 60% 70%, oklch(1 0 0 / 0.5), transparent),
+      radial-gradient(2px 2px at 80% 20%, oklch(0.85 0.17 88 / 0.8), transparent),
+      radial-gradient(1px 1px at 40% 90%, oklch(1 0 0 / 0.5), transparent),
+      radial-gradient(1px 1px at 10% 60%, oklch(0.85 0.17 88 / 0.6), transparent);
+    background-size: 400px 400px;
+  }
+}
