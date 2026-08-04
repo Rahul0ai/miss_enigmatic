@@ -584,29 +584,53 @@ function FinaleOverlay({ onClose }: { onClose: () => void }) {
         <div className="mx-auto my-6 h-px w-40 bg-ink/40" />
         <div className="space-y-4 font-body text-[15px] leading-relaxed sm:text-base md:text-lg" style={{color:"oklch(0.24 0.05 40)"}}>
           <p>
-            <strong>Oi, Rupaaa! 👒🍖</strong> Luffy here!! I was about to destroy the
-            biggest mountain of meat 🤤🍗 when Rahul came running like his pants were on
-            fire yelling, <strong>"IT'S RUPA'S BIRTHDAY!!"</strong> 🎉 So I swallowed my
-            food in one bite (don't ask 😆) and rushed over to wish you!
-          </p>
-          <p>
-            <strong>Happy Birthday, Miss 👧 Rupa! 🎂✨</strong> Today you're officially
-            allowed to eat extra cake, laugh as loud as you want, and blame everything
-            on <em>"it's my birthday!"</em> 🤭🍰
-          </p>
-          <p>
-            Rahul talks about you so much I thought you were joining the Straw Hats!
-            😂⚓ He says you're kind, cheerful, and your smile can brighten anyone's
-            day... maybe not enough to stop Zoro from getting lost though. 🤣🗺️
-          </p>
-          <p>
-            Keep chasing your dreams, eat your favorite food 🍕🍗, laugh a lot, make
-            amazing memories, and if anyone steals your birthday cake... call me! 😎🍰
-            (Though I might eat it first. 🤭🍖)
-          </p>
+  <strong>Oi, Rupaaa! 👒🍖</strong> Luffy here!! I was just about to conquer the biggest mountain of meat ever 🤤🍗 when Rahul came sprinting toward me like Sanji had stolen his Wi-Fi, screaming,
+  <strong>"IT'S RUPA'S BIRTHDAY!!"</strong> 🎉
+  So naturally... I stuffed the entire plate into my mouth in one bite 🍖😤 and came running!
+</p>
+
+<p>
+  <strong>Happy Birthday, Miss Rupa! 🎂✨</strong> Today is the only day where nobody can stop you from eating extra cake, laughing at your own jokes, or saying,
+  <em>"It's my birthday, deal with it."</em> 😂🎂
+</p>
+
+<p>
+  Rahul keeps talking about you so much that I honestly thought you were already a Straw Hat. 🤣⚓
+  But then he added...
+  <strong>"She's the stoic type."</strong> 😐
+  I was like... "What's that? Some new Devil Fruit power?" 🍈💀
+</p>
+
+<p>
+  Then he said,
+  <strong>"Sometimes she's so calm you can't tell if she's happy... or secretly planning your funeral."</strong> 😂
+  And every now and then...
+  <strong>BOOM!</strong> 💥
+  Out comes the legendary <em>"Damn Rude Mode."</em> 😭🤣
+  Even Zoro would stop getting lost just to avoid that glare. 🗡️👀
+</p>
+
+<p>
+  But don't worry...
+  We all know behind that serious face is someone who's kind, caring, and probably just pretending not to smile. 😏✨
+  (Yeah... Rahul already spoiled that secret. 😂)
+</p>
+
+<p>
+  So today, drop the serious face for at least <strong>5 minutes!</strong> 🤭
+  Eat your favorite food 🍕🍗, laugh until your stomach hurts, make unforgettable memories, and enjoy every second of your special day!
+</p>
+
+<p>
+  And if anyone dares steal your birthday cake... CALL ME!! 😎🍰
+  I'll become the Pirate King...
+  after I "protect" the cake by eating it first. 🍖🤣
+</p>
+
+
           <p className="text-center font-display text-xl sm:text-2xl" style={{ color: "oklch(0.40 0.19 25)" }}>
             SHISHISHISHI!! 👒🎉<br />
-            Happy Birthday, <strong>Miss 👧 Rupa!</strong> <br />
+            Happy Birthday, <strong>Miss 👧 emojiiiiii!</strong> <br />
             Wishing you endless adventures, laughter, yummy food, and dreams that come true! ⚓🌈✨
           </p>
         </div>
