@@ -583,48 +583,31 @@ function FinaleOverlay({ onClose }: { onClose: () => void }) {
         </h2>
         <div className="mx-auto my-6 h-px w-40 bg-ink/40" />
         <div className="space-y-4 font-body text-[15px] leading-relaxed sm:text-base md:text-lg" style={{color:"oklch(0.24 0.05 40)"}}>
-          <p>
-  <strong>Oi, Rupaaa! 👒🍖</strong> Luffy here!! I was just about to conquer the biggest mountain of meat ever 🤤🍗 when Rahul came sprinting toward me like Sanji had stolen his Wi-Fi, screaming,
+        <p>
+  <strong>Oi, Rupaaa! 👒🍖</strong> Luffy here!! I was about to destroy the biggest mountain of meat 🤤🍗 when Rahul came running like he saw a Sea King, yelling,
   <strong>"IT'S RUPA'S BIRTHDAY!!"</strong> 🎉
-  So naturally... I stuffed the entire plate into my mouth in one bite 🍖😤 and came running!
+  So I swallowed my food in one bite and rushed here!
 </p>
 
 <p>
-  <strong>Happy Birthday, Miss Rupa! 🎂✨</strong> Today is the only day where nobody can stop you from eating extra cake, laughing at your own jokes, or saying,
-  <em>"It's my birthday, deal with it."</em> 😂🎂
+  <strong>Happy Birthday, Miss Rupa! 🎂✨</strong> Today you're officially allowed to eat extra cake 🍰, laugh as much as you want, and blame everything on,
+  <em>"It's my birthday!"</em> 😂
 </p>
 
 <p>
-  Rahul keeps talking about you so much that I honestly thought you were already a Straw Hat. 🤣⚓
-  But then he added...
+  Rahul talks about you so much I thought you were joining the Straw Hats! 🤣⚓ Then he told me,
   <strong>"She's the stoic type."</strong> 😐
-  I was like... "What's that? Some new Devil Fruit power?" 🍈💀
+  I was like, "Is that a new Haki?" 🤔😂
+  And sometimes... your <strong>Legendary Rude Mode</strong> appears out of nowhere. 💀 Even Zoro would think twice before asking for directions! 🤣
 </p>
 
 <p>
-  Then he said,
-  <strong>"Sometimes she's so calm you can't tell if she's happy... or secretly planning your funeral."</strong> 😂
-  And every now and then...
-  <strong>BOOM!</strong> 💥
-  Out comes the legendary <em>"Damn Rude Mode."</em> 😭🤣
-  Even Zoro would stop getting lost just to avoid that glare. 🗡️👀
+  But jokes aside, Rahul says you're kind, cheerful, and your smile can brighten anyone's day... even if you pretend not to smile. 😏✨
 </p>
 
 <p>
-  But don't worry...
-  We all know behind that serious face is someone who's kind, caring, and probably just pretending not to smile. 😏✨
-  (Yeah... Rahul already spoiled that secret. 😂)
-</p>
-
-<p>
-  So today, drop the serious face for at least <strong>5 minutes!</strong> 🤭
-  Eat your favorite food 🍕🍗, laugh until your stomach hurts, make unforgettable memories, and enjoy every second of your special day!
-</p>
-
-<p>
-  And if anyone dares steal your birthday cake... CALL ME!! 😎🍰
-  I'll become the Pirate King...
-  after I "protect" the cake by eating it first. 🍖🤣
+  So enjoy your day, eat your favorite food 🍕🍗, make awesome memories, and if anyone steals your birthday cake... call me! 😎🍰
+  (I'll protect it... by eating it first. 🤭🍖)
 </p>
 
 
